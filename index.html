@@ -1,53 +1,66 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orp-Vi</title>
-    <style>
-        body {
-            background-color: #f4f5ef;
-        }
-        #image1 {float: right;}
-        h1 {text-align: center;}
-
-    </style>
+    <title>Personal Area</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
-    <h1>Orp-vi</h1>
-    <img id="image1" src="img/6.jpg" alt="My_Test_image">
-    <p>Orp-vi is a non-commercial site which you can discover Mert Kaan Cukadar's personal projects. </p>
-    <h2>who am i?</h2>
-    <p>Hi it's Mert,
-         I am passionate about to shere my skills and project regularly on this personal site.In addition want
-         to practice about syber security in this proccess cv challenge site is the first step of this project.</p>
-    <h3>what is cv challenge and where did i start?</h3>
-    <p>cv challenge is one of the thing which shows that, the person who decided to do this challenge will learn
-        about these topic:
-        <ul>
-            <li>HTML</li>
-            <li>Css</li>
-            <li>Cloud</li>
-            <li>Javascript</li>
-            <li>Database</li>
-            <li>API</li>
-            <li>Python</li>
-            <li>CI/CD</li>
-        </ul>
-        You can reach the challenge from <a href="https://cloudresumechallenge.dev/docs/the-challenge/"><strong>Here</strong></a>
-    </p>
-    <div>
-        <h2>
-            Second phases for cv cahllenge will teach us branches in github
-        </h2>
-        <p>To set up your branches first we use to go github>our saved branches>create new branch> named that second_main </p>
-        <p>After that we will upload our second branch from AWS Amplifier (Amazon Web Services Amplifier) for test that. <br>
-        <strong>this is the test branch html file if you see this file you got this step.</strong>
-        </p>
-    </div>
+    <section>
+        <div class="circle">
 
+        </div>
+        <header>
+            <a href="#" ><img src="img/Logo_transparent.png" alt=""class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">Projects</a> </li>
+                <li><a href="#">Cv_Challenge</a></li>
+                <li><a href="#">Blank</a></li>
+            </ul>
+        </header>
+
+        
+        <div class="Content">
+            <div class="textBox">
+                <h2>Mert Kaan Çukadar <br> <span><span>Personal Area</span></span></h2>
+                <p>Hi it's Mert, I am passionate about to shere my skills and 
+                    project regularly on this personal
+                     site.In addition want to practice about 
+                    cyber security in this proccess cv challenge site
+                     is the first step of this project.</p>
+
+                <p>I want to shere my first project; cv challenge this is the css step of our challenge
+                    after these make-up steps we will move on with the server side and scripts of personal site.
+                    if want to learn more about what is CV Challenge you can learn more from above. <br>
+
+                    <a href="https://cloudresumechallenge.dev/docs/the-challenge/">Learn More</a>
+                </p>
+            </div>
+            <div class="imgbox">
+                <img src="/img/rapid_mini_reover.png" alt="Rapid_mini" width="900" class="project">
+            </div>    
+        </div>
+       <div>
+           <ul class="thumb">
+               <li><img src="/img/some1.png" alt="" width="100" onclick="imgSlider('img/some1.png')"></li>
+               <li><img src="/img/rapid_mini_reover.png" width="100" alt="" onclick="imgSlider('img/rapid_mini_reover.png')"></li>
+               <li><img src="/img/Orp_vision_01.png" alt="" onclick="imgSlider('img/Orp_vision_01.png')"></li>
+               <li><img src="/img/galata.png" alt="" onclick="imgSlider('img/galata.png')"></li>
+           </ul>
+       </div>
+
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector(".project").src = anything;
+
+        }
+
+    </script>
+    
 </body>
 </html>
